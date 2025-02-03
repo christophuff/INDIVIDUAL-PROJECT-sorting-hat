@@ -1,0 +1,91 @@
+.sankofa-display-regular {
+  font-family: "Sankofa Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Sankofa Display", serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+}
+
+#first-years-container {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 15px;
+  text-align: center;
+  color: #fdff8c;
+}
+
+.expelled-card {
+  background: black;
+  width: 200px;
+  margin-right: 100px;
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 2px black;
+}
+
+.card-body h5 {
+  margin: 10px 0;
+  text-shadow: 0 0 2px black;
+}
+
+.abomination {
+  background: #873081;
+}
+
+.illusions {
+  background: #37856b;
+}
+
+.plant {
+  background: #197e30;
+}
+
+.potions {
+  background: #756416;
+}
+
+.bard {
+  background: #7d1931;
+}
+
+.oracle {
+  background: #3b1f76;
+}
+
+.healing {
+  background: #1a4275;
+}
+
+.construction {
+  background: #614a21;
+}
+
+.beastkeeping {
+  background: #784d16;
+}
