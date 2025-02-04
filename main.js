@@ -64,7 +64,7 @@ const cardsOnDom = (array) => {
       </div>
       <div class="card-body">
         <img src="images/${student.coven.toLowerCase()}.jpg" class="card-img-top" alt="${student.coven} logo">
-        <h5 class="card-title">${student.coven}</h5>
+        <h5 class="card-title">Coven: ${student.coven}</h5>
         <button class="btn btn-danger" id="expell--${student.id}">Expell</button>
       </div>
     </div>
