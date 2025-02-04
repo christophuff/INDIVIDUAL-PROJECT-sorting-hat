@@ -16,6 +16,10 @@ h1 {
   font-size: 60px;
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   background: black;
   color: white;
@@ -27,11 +31,20 @@ body {
 }
 
 #first-years-container {
-  height: 100vh;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#expelled-container {
+  display: flex;
+  height: 350px;
+  justify-content: center;
 }
 
 .card {
+  width: 200px;
+  height: 350px;
   margin: 15px;
   text-align: center;
   color: #fdff8c;
@@ -40,18 +53,69 @@ body {
 .expelled-card {
   background: black;
   width: 200px;
-  margin-right: 100px;
+  margin: 15px;
+  padding: 25px 10px 0 10px;
+  border: 2px solid #fdff8c;
+}
+
+.greeting-card {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  margin: 20px auto;
+  min-height: 510px;
+}
+
+.greeting-card video {
+  margin: 10px auto;
+}
+
+.greeting-card .card-title {
+  font-family: "Sankofa Display", serif;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+#apply-btn {
+  margin: 10px 0 5px 0;
+  background: purple;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding: 5px 10px;
+}
+
+#apply-btn:hover{
+  background: rgb(58, 0, 58);
 }
 
 .card-header {
   font-size: 20px;
   font-weight: bold;
+  text-transform: uppercase;
   text-shadow: 0 0 2px black;
+}
+
+.card-title {
+  font-style: italic;
 }
 
 .card-body h5 {
   margin: 10px 0;
   text-shadow: 0 0 2px black;
+}
+
+#input-student {
+  width: 70%;
+  display: inline;
+}
+
+#form-container {
+  text-align: center;
+}
+
+#submit-btn {
+  display: inline;
 }
 
 .abomination {
@@ -88,4 +152,15 @@ body {
 
 .beastkeeping {
   background: #784d16;
+}
+
+
+@media (min-width: 325px) and (max-width: 400px){
+  .card {
+    width: 150px;
+  }
+
+  .expelled-card {
+    width: 150px;
+  }
 }

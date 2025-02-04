@@ -89,7 +89,7 @@ const expelledCard = (array) => {
   renderToDom('#expelled-container', cardString);
 }
 
-cardsOnDom(students);
+// cardsOnDom(students);
 
 
 
@@ -99,13 +99,31 @@ const firstYears = document.querySelector('#first-years-container');
 
 firstYears.addEventListener('click', (e) => {
   if (e.target.id.toLowerCase().includes('expell')){
-    let expelledStudent = [];
     const [, id] = e.target.id.split("--");
     const index = students.findIndex(item => item.id === Number(id));
-    const extractedStudent = students.splice(index, 1);
-    expelledStudent.push(extractedStudent);
+    const expelledStudent = students.splice(index, 1);
     cardsOnDom(students);
-    console.log(expelledStudent);
     expelledCard(expelledStudent);
   }
 });
+
+
+const applyBtn = document.querySelector('#apply-btn');
+const heroSection = document.querySelector('#hero');
+
+applyBtn.addEventListener('click', () => {
+  heroSection.innerHTML = `
+
+    <h3>Enter Your Name Below And Try Out A New Coven<h3>
+    <form class="row">
+      <div class="col" id="form-container">
+          <input type="text" class="form-control" id="input-student" placeholder="Enter Your Name Here"></input>
+          <input type="submit" class="btn btn-primary" id="submit-btn"> 
+      </div>
+    </form>
+  `
+  cardsOnDom(students);
+});
+
+const newStudent = document.querySelector('#form-container');
+
