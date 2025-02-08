@@ -1,4 +1,57 @@
-# Sorting Hat
+# Owl House Coven Sorting Hat
+
+This application is a fun, interactive way to discover which of the nine covens from the animated series *The Owl House* you might belong to!  Forget about those other wizarding schools – it's time to find your place in the Boiling Isles!
+
+## How it Works
+
+Simply enter your name in the provided input field and click the "Sort Me!" button.  The Sorting Hat (well, a digital version of it) will then magically determine your coven affiliation.  You'll be presented with your assigned coven and a brief description.
+
+## Getting Started
+
+1.  **Open the Application:**  [Provide instructions on how to access/run the application.  For example:]
+      *Download the application from https://github.com/christophuff/INDIVIDUAL-PROJECT-sorting-hat
+
+2.  **Enter Your Name:** Type your name into the text input field.
+
+3.  **Get Sorted!** Click the "Submit!" button.
+
+4.  **View Your Results:** Your assigned coven will be displayed (working on adding a description to each coven)
+
+
+
+## Coven Descriptions
+
+[Optional: You can include brief descriptions of each coven here.  This adds more context for the user.  Example:]
+[Still in Progress]
+
+*   **Abomination Coven:**  Those who excel at creating and controlling abominations.
+*   **Bard Coven:** Masters of music and magic, capable of enchanting with their melodies.
+*   **Beast Keeping Coven:**  Experts in the care and understanding of magical creatures.
+*   **Construction Coven:** Skilled builders and architects, creating magnificent structures.
+*   **Healing Coven:** Dedicated to the art of healing and potion making.
+*   **Illusion Coven:**  Weavers of illusions and masters of disguise.
+*   **Oracle Coven:** Those gifted with foresight and the ability to glimpse the future.
+*   **Plant Coven:**  Communicators with plants and wielders of nature's magic.
+*   **Emperor's Coven:** [Describe the Emperor's Coven, perhaps mentioning its role in the show].
+
+
+
+## Contact
+
+https://www.linkedin.com/in/chris-huff-295418195/
+
+
+
+
+
+
+
+
+
+
+<!-- # Sorting Hat
+
+These were the instuctions that came with the project
 
 ## Goals
 The goal of this project is to test your knowledge and to have a FUN time stretching yourself on your FIRST independent application that will become a part of your portfolio.
@@ -30,7 +83,7 @@ In the end, your app will look something like:
 
 <!-- [See Demo](https://drt-sortinghat.netlify.app/)
  -->
-## Technical Requirements
+<!-- ## Technical Requirements
 - You MUST plan your project and highly suggest using issue tickets. There are a few that have been provided for you to use already. Continue to add to these so you know what work you need to complete. 
 - You MAY use the `renderToDom()` function that we worked on in class, but you also need to be able to explain it if you use it
 - You have to create a data structure for your project. Review all the elements that need to be on the DOM and create the structure accordingly
@@ -53,5 +106,4 @@ Think of a way you can expel students without just hiding those divs on the page
 
 ## Optional Bonus
 - House Colors: The color of the student's card changes depending on which house they were sorted.
-- Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
-
+- Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house) --> -->
