@@ -16,6 +16,12 @@ h1 {
   font-size: 60px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
 h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -51,12 +57,20 @@ body {
   color: #fdff8c;
 }
 
+.card button {
+  margin-top: 20px;
+}
+
 .expelled-card {
   background: black;
   width: 200px;
   margin: 15px;
   padding: 25px 10px 0 10px;
   border: 2px solid #fdff8c;
+}
+
+.expelled-card p {
+  font-size: 16px;
 }
 
 .greeting-card {
@@ -77,16 +91,15 @@ body {
   margin-top: -20px;
 }
 
-#apply-btn {
-  margin: 10px 0 5px 0;
+.greeting-card a {
   background: purple;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
   padding: 5px 10px;
+  margin: 10px 5px 40px 5px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-#apply-btn:hover{
+.greeting-card a:hover {
   background: rgb(58, 0, 58);
 }
 
@@ -104,17 +117,40 @@ body {
   font-size: 16px;
 }
 
-#input-student {
+#student-name {
   width: 70%;
   display: inline;
 }
 
-#form-container {
+#my-form {
   text-align: center;
 }
 
-#submit-btn {
+#submit {
   display: inline;
+  color: #fdff8c;
+  background: purple;
+  border: none;
+}
+
+#submit:hover {
+  opacity: .5;
+}
+
+#btn-container {
+  width: 80%;
+  margin: 20px auto 5px;
+}
+
+#btn-container button {
+  width: 200px;
+  margin: 10px;
+  color: #fdff8c;
+}
+
+#btn-container button:hover{
+  opacity: .7;
+  background: inherit;
 }
 
 .abomination {
@@ -125,7 +161,7 @@ body {
   background: #37856b;
 }
 
-.plant {
+.plants {
   background: #197e30;
 }
 
@@ -161,5 +197,13 @@ body {
 
   .expelled-card {
     width: 150px;
+  }
+}
+
+@media (max-width: 575px){
+  #btn-container button {
+    width: 125px;
+    margin: 5px;
+    padding: 5px 10px;
   }
 }

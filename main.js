@@ -12,7 +12,7 @@ const students = [
   {
     id: 3,
     name: "Willow",
-    coven: "Plant"
+    coven: "Plants"
   },
   {
     id: 4,
@@ -51,7 +51,6 @@ const renderToDom = (divId, html) => {
   selectedDiv.innerHTML = html;
 }
 
-
 //SHOW STUDENTS
 const cardsOnDom = (array) => {
   let cardString = "";
@@ -64,7 +63,7 @@ const cardsOnDom = (array) => {
       </div>
       <div class="card-body">
         <img src="images/${student.coven.toLowerCase()}.jpg" class="card-img-top" alt="${student.coven} logo">
-        <h5 class="card-title">Coven: ${student.coven}</h5>
+        <h5 class="card-title">Coven:<br>${student.coven}</h5>
         <button class="btn btn-danger" id="expell--${student.id}">Expell</button>
       </div>
     </div>
@@ -89,8 +88,6 @@ const expelledCard = (array) => {
   renderToDom('#expelled-container', cardString);
 }
 
-// cardsOnDom(students);
-
 
 
 // EXPELL STUDENTS
@@ -108,22 +105,71 @@ firstYears.addEventListener('click', (e) => {
 });
 
 
-const applyBtn = document.querySelector('#apply-btn');
-const heroSection = document.querySelector('#hero');
+const myForm = document.querySelector('#my-form');
 
-applyBtn.addEventListener('click', () => {
-  heroSection.innerHTML = `
+const createStudent = (e) => {
+  e.preventDefault();
 
-    <h3>Enter Your Name Below And Try Out A New Coven<h3>
-    <form class="row">
-      <div class="col" id="form-container">
-          <input type="text" class="form-control" id="input-student" placeholder="Enter Your Name Here"></input>
-          <input type="submit" class="btn btn-primary" id="submit-btn"> 
-      </div>
-    </form>
-  `
+  const newStudent = {
+    id: students.length + 1,
+    name: document.querySelector('#student-name').value,
+    coven: students[Math.floor(Math.random() * students.length)].coven,
+  }
+  students.unshift(newStudent);
   cardsOnDom(students);
-});
 
-const newStudent = document.querySelector('#form-container');
+  myForm.reset();
+}
 
+myForm.addEventListener('submit', createStudent);
+
+const btnFilter = (e) => {
+  if (e.target.id.includes('abominationFilter')) {
+    const abomination = students.filter(item => item.coven.toLowerCase() === 'abomination');
+    cardsOnDom(abomination);
+  }
+  if (e.target.id.includes('illusionsFilter')) {
+    const illusions = students.filter(item => item.coven.toLowerCase() === 'illusions');
+    cardsOnDom(illusions);
+  }
+  if (e.target.id.includes('plantsFilter')) {
+    const plants = students.filter(item => item.coven.toLowerCase() === 'plants');
+    cardsOnDom(plants);
+  }
+  if (e.target.id.includes('potionsFilter')) {
+    const potions = students.filter(item => item.coven.toLowerCase() === 'potions');
+    cardsOnDom(potions);
+  }
+  if (e.target.id.includes('bardFilter')) {
+    const bard = students.filter(item => item.coven.toLowerCase() === 'bard');
+    cardsOnDom(bard);
+  }
+  if (e.target.id.includes('oracleFilter')) {
+    const oracle = students.filter(item => item.coven.toLowerCase() === 'oracle');
+    cardsOnDom(oracle);
+  }
+  if (e.target.id.includes('healingFilter')) {
+    const healing = students.filter(item => item.coven.toLowerCase() === 'healing');
+    cardsOnDom(healing);
+  }
+  if (e.target.id.includes('constructionFilter')) {
+    const construction = students.filter(item => item.coven.toLowerCase() === 'construction');
+    cardsOnDom(construction);
+  }
+  if (e.target.id.includes('beastkeepingFilter')) {
+    const beastkeeping = students.filter(item => item.coven.toLowerCase() === 'beastkeeping');
+    cardsOnDom(beastkeeping);
+  }
+  if (e.target.id.includes('clearFilter')) {
+    cardsOnDom(students);
+  }
+}
+
+const startApp = () => {
+  // PUT ALL CARDS ON THE DOM
+  cardsOnDom(students);
+
+  //button filter
+  document.querySelector('#btn-container').addEventListener('click', btnFilter);
+}
+startApp();
