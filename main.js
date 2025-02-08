@@ -105,6 +105,8 @@ firstYears.addEventListener('click', (e) => {
 });
 
 
+//CREATE STUDENT
+
 const myForm = document.querySelector('#my-form');
 
 const createStudent = (e) => {
@@ -122,6 +124,11 @@ const createStudent = (e) => {
 }
 
 myForm.addEventListener('submit', createStudent);
+
+
+
+
+//FILTER STUDENTS BY COVEN
 
 const btnFilter = (e) => {
   if (e.target.id.includes('abominationFilter')) {
@@ -164,6 +171,10 @@ const btnFilter = (e) => {
     cardsOnDom(students);
   }
 }
+
+
+
+//START APP 
 
 const startApp = () => {
   // PUT ALL CARDS ON THE DOM
