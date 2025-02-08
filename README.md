@@ -9,7 +9,7 @@ Simply enter your name in the provided input field and click the "Sort Me!" butt
 ## Getting Started
 
 1.  **Open the Application:**  [Provide instructions on how to access/run the application.  For example:]
-      *Download the application from https://github.com/christophuff/INDIVIDUAL-PROJECT-sorting-hat
+*     Download the application from https://github.com/christophuff/INDIVIDUAL-PROJECT-sorting-hat
 
 2.  **Enter Your Name:** Type your name into the text input field.
 
